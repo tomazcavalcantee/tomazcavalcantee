@@ -13,6 +13,6 @@ def e_real(numero):
     E_STR = f'{E_INT}'[:number]
     if len(E_STR) > number and int(E_STR[number]) >= 5:
         rounded = str(int(E_STR[:number]) + 1)
-        return f"3,{rounded}"
+        return f"2,{rounded}"
     else:
-        return f"3,{E_STR[:-1]}" if number > 1 else "3"
+        return f"2,{E_STR[:-1]}" if number > 1 else "2"
